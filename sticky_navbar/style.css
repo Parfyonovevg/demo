@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  background-color: rgb(241, 233, 222);
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.header {
+  background-color: #272626;
+  color: #fff;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 10rem;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+.header .logo {
+  font-size: 1.6rem;
+}
+.header_toggled {
+  background-color: rgb(241, 233, 222);
+  color: #000000;
+  height: 3rem;
+  padding: 0.6rem 10rem;
+}
+.header_toggled .navigation {
+  font-size: 0.8rem;
+}
+.header_toggled .logo {
+  font-size: 1.3rem;
+}
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.2rem;
+}
+.navigation__link_active {
+  color: red;
+  text-shadow: 1px 1px 2px red;
+}
+
+.title-page {
+  background-image: url("https://www.growhow.in.ua/wp-content/uploads/2020/04/10-W-TRENDS.jpg");
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+}
+.title-page__text {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.title-page__background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.content {
+  padding: 0 10rem;
+}
+.content p {
+  line-height: 2;
+}
+
+footer {
+  background-color: #272626;
+  height: 4rem;
+  color: #fff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}

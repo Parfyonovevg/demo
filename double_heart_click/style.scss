@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Muli', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.img {
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png');
+  background-size: cover;
+  background-position: center center;
+  height: 14.5rem;
+  width: 14rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
+  .click {
+    position: absolute;
+    font-size: 3rem;
+    transform: translate(-50%, -50%) scale(0);
+    animation: blink 0.5s linear;
+  }
+  @keyframes blink {
+    to {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0;
+    }
+  }
+}
+.fa-solid {
+  color: red;
+}

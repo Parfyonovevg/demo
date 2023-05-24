@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  background-color: #e4e6dc;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container,
+.message-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 1rem;
+  background-color: #dae1bf;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 25rem;
+  height: 15rem;
+  text-align: center;
+}
+.container h3,
+.message-container h3 {
+  margin-top: 0;
+}
+
+.smiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.smiles i {
+  font-size: 2.2rem;
+  color: yellow;
+  background-color: #000;
+  border-radius: 50%;
+}
+.smiles p {
+  margin-bottom: 0;
+}
+
+.smile-btn {
+  width: 90px;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.1rem;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.smile-btn:hover {
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+.active {
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+.submit {
+  background-color: #423e3e;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  width: 50%;
+  cursor: pointer;
+}
+.submit:hover, .submit:active {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+.hide {
+  display: none;
+}
+
+.message-container i {
+  color: red;
+  font-size: 2rem;
+}

@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  background-color: #85cfe5;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+.add {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  background-color: #11ba3e;
+  color: #fff;
+  border: none;
+  width: 7rem;
+  height: 2rem;
+  letter-spacing: 1px;
+  line-height: 1rem;
+  cursor: pointer;
+}
+.add:active {
+  -webkit-transform: scale(0.94);
+          transform: scale(0.94);
+}
+.add span {
+  font-weight: 700;
+}
+
+.notes {
+  margin: 7rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.note {
+  width: 20rem;
+}
+.note__header {
+  height: 2.2rem;
+  background-color: #11ba3e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.note__text {
+  width: 20rem;
+  height: 20rem;
+  border: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  background-color: #fff;
+  padding: 1rem;
+}
+.note textarea:focus {
+  outline: none;
+}
+
+.btn {
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.btn:active {
+  -webkit-transform: scale(0.94);
+          transform: scale(0.94);
+}
+
+.hidden {
+  display: none;
+}

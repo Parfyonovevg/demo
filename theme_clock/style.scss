@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Muli', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+
+  &.dark {
+    background-color: #000;
+    color: #fff;
+    .btn {
+      background-color: #fff;
+      color: #000;
+    }
+    .minutes,
+    .hours {
+      background-color: #fff;
+    }
+  }
+}
+
+.btn {
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  margin-bottom: 15rem;
+  margin-top: 4rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.clock-container {
+  position: relative;
+}
+.clock {
+  position: relative;
+  margin-bottom: 3rem;
+  transform: translateX(50%);
+  margin-bottom: 14rem;
+}
+.arrow {
+  position: absolute;
+  bottom: 0;
+  transform-origin: bottom left;
+}
+.hours {
+  width: 0.1875rem;
+  height: 6rem;
+  background-color: #000;
+}
+.minutes {
+  width: 0.125rem;
+  height: 7rem;
+  background-color: #000;
+}
+.seconds {
+  width: 0.1rem;
+  height: 8rem;
+  background-color: #e81414;
+}
+.center-point {
+  position: absolute;
+  transform: translate(-38%, -60%);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #0b0b0b;
+  border: 2px solid red;
+}
+.time {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.date {
+  font-weight: 400;
+  color: #b59696;
+}
+.day {
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.125rem;
+}

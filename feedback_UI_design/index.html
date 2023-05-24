@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Feedback UI Design</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <h3 class="title">How satisfied are you with our service?</h3>
+      <div class="smiles">
+        <button class="smile-btn" id="happy">
+          <i class="fa-solid fa-face-smile-beam"></i>
+          <p>Happy</p>
+        </button>
+        <button class="smile-btn" id="neutral">
+          <i class="fa-solid fa-face-meh"></i>
+          <p>Neutral</p>
+        </button>
+        <button class="smile-btn" id="sad">
+          <i class="fa-solid fa-face-frown"></i>
+          <p>Unhappy</p>
+        </button>
+      </div>
+      <button type="submit" class="submit" id="send">Send review</button>
+    </div>
+    <div class="message-container hide" id="message">
+      <i class="fa-solid fa-heart"></i>
+      <p>Thank you!</p>
+      <p>Feedback: <span>Happy</span></p>
+      <p>We'll use your feedback to improve our customer support.</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

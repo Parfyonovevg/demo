@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+
+$border-color: #2b3de5;
+
+@mixin border() {
+  border: 3px solid $border-color;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  background-color: #4d97f1;
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.goal {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  height: 45vh;
+  width: 12rem;
+  @include border();
+  background-color: #fff;
+  color: $border-color;
+  overflow: hidden;
+  #modal {
+    background-color: #78c6f3;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.8;
+    width: 100%;
+    height: 0;
+  }
+  h3 {
+    margin-top: 2rem;
+  }
+  p {
+    margin-bottom: 3rem;
+  }
+}
+.result-section {
+  text-align: center;
+}
+.glasses {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas:
+    '. . . .'
+    '. . . .';
+}
+.glass {
+  @include border();
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin: 0 auto;
+  width: 3rem;
+  height: 5rem;
+  background-color: #fff;
+  transition: all 0.5s ease;
+  color: $border-color;
+}
+
+.filled {
+  background-color: #78c6f3;
+  color: #fff;
+}

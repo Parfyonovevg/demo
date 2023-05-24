@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 20rem;
+}
+
+.menu {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.menu div {
+  width: 20px;
+  height: 3px;
+  background-color: #000;
+  margin-bottom: 2px;
+}
+
+.logo h3 {
+  margin-top: 0;
+}
+
+.navigation {
+  position: absolute;
+  left: 0;
+  z-index: 5;
+  height: 100vh;
+  width: 26vw;
+  background-color: #fff;
+  text-align: left;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.5s linear 0.1s;
+  transition: -webkit-transform 0.5s linear 0.1s;
+  transition: transform 0.5s linear 0.1s;
+  transition: transform 0.5s linear 0.1s, -webkit-transform 0.5s linear 0.1s;
+}
+.navigation ul li {
+  margin-bottom: 1rem;
+}
+.navigation img {
+  max-width: 60%;
+  margin-top: 3rem;
+}
+.navigation.open {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.modal_red {
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  width: 30vw;
+  background-color: red;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.5s linear 0.6s;
+  transition: -webkit-transform 0.5s linear 0.6s;
+  transition: transform 0.5s linear 0.6s;
+  transition: transform 0.5s linear 0.6s, -webkit-transform 0.5s linear 0.6s;
+}
+.modal_red.open {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.modal_black {
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  width: 28vw;
+  background-color: #000;
+  z-index: 3;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.5s linear 0.3s;
+  transition: -webkit-transform 0.5s linear 0.3s;
+  transition: transform 0.5s linear 0.3s;
+  transition: transform 0.5s linear 0.3s, -webkit-transform 0.5s linear 0.3s;
+}
+
+.nested-list {
+  margin-top: 1rem;
+}
+
+.close {
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: grey;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .modal_red {
+    width: 100vw;
+  }
+  .modal_black {
+    width: 95vw;
+  }
+  .navigation {
+    width: 90vw;
+  }
+}
+.open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}

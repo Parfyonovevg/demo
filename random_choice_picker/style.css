@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  background-color: #2767d5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+h3 {
+  color: #fff;
+}
+
+textarea {
+  color: #000;
+  border: none;
+  display: block;
+  width: 100%;
+  height: 6.25rem;
+  font-family: inherit;
+  padding: 0.625rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.choices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.choices p {
+  background-color: rgb(65, 18, 221);
+  color: #fff;
+  padding: 1rem 3rem;
+  border-radius: 30px;
+  -webkit-transition: scale 1s ease;
+  transition: scale 1s ease;
+}
+.choices p.active {
+  background-color: rgb(222, 106, 106);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}

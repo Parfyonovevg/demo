@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+
+$first-color: #111435;
+$second-color: #783791;
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Muli', sans-serif;
+  background-color: $first-color;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.form {
+  margin-bottom: 2rem;
+  input {
+    padding: 0.5rem;
+    width: 25rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    background-color: $second-color;
+    color: #fff;
+    &::placeholder {
+      color: #fff;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.profile {
+  height: 18rem;
+  width: 40rem;
+  border-radius: 5px;
+  background-color: $second-color;
+  color: #fff;
+  display: flex;
+  overflow: scroll;
+  &__img {
+    width: 7rem;
+    height: 7rem;
+    border: 5px solid $first-color;
+    border-radius: 50%;
+    margin: 3rem 2rem auto 1rem;
+    background-image: url('https://icons.veryicon.com/png/o/system/ali-mom-icon-library/random-user.png');
+    background-size: cover;
+    flex-shrink: 0;
+  }
+
+  &__info {
+    align-self: flex-start;
+    font-size: 0.9rem;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__about {
+    margin-bottom: 1rem;
+  }
+
+  &__stat {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__tags {
+    span {
+      display: inline-block;
+      background-color: $first-color;
+      color: #fff;
+      margin: 0.3rem;
+      padding: 0.3rem;
+      margin-left: 0;
+      font-size: 0.7rem;
+    }
+  }
+}
+
+.error {
+  background-color: $second-color;
+  color: #fff;
+  font-size: 1.3rem;
+  height: 10rem;
+  width: 30rem;
+  padding: 3rem;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}

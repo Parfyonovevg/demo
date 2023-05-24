@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+$first-color: #dab8d9;
+* {
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f4f2f5;
+  font-family: 'Muli', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.logo {
+  color: $first-color;
+  font-size: 10rem;
+  margin: 7rem 0;
+}
+
+.content {
+  flex-grow: 1;
+}
+input {
+  height: 4rem;
+  width: 20rem;
+  border: none;
+  font-size: 2rem;
+  padding: 1rem;
+  border-bottom: 1px solid $first-color;
+
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    padding: 0.5rem;
+    font-size: 2rem;
+    color: rgb(182, 178, 178);
+  }
+}
+.todos {
+  text-align: left;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.todo {
+  height: 4rem;
+  width: 20rem;
+  padding: 1rem;
+  background-color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  &:not(:last-child) {
+    border-bottom: 1px solid $first-color;
+  }
+}
+
+.description {
+  font-size: 1rem;
+  color: rgb(79, 76, 76);
+}
+
+.done {
+  text-decoration: line-through;
+  color: rgb(182, 178, 178);
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Generator</h1>
+      <form action="#" class="password">
+        <input type="text" id="password" />
+        <button id="copy">
+          <i class="fa-regular fa-clipboard"></i>
+        </button>
+      </form>
+      <div class="length">
+        <label>
+          Length of password
+          <input
+            type="number"
+            value="6"
+            min="6"
+            max="20"
+            step="1"
+            id="length"
+          />
+        </label>
+      </div>
+      <form class="features">
+        <label>
+          Include uppercase letters
+          <input
+            type="checkbox"
+            name="features"
+            value="uppercase"
+            id="uppercase"
+          />
+        </label>
+
+        <label>
+          Include lowercase letters
+          <input
+            type="checkbox"
+            name="features"
+            value="lowercase"
+            id="lowercase"
+          />
+        </label>
+
+        <label>
+          Include numbers
+          <input type="checkbox" name="features" value="numbers" id="numbers" />
+        </label>
+
+        <label>
+          include symbols
+          <input type="checkbox" name="features" value="symbols" id="symbols" />
+        </label>
+
+        <input
+          class="generate"
+          type="submit"
+          id="generate"
+          value="Generate Password"
+        />
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

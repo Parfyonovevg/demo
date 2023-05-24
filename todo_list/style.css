@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f2f5;
+  font-family: "Muli", sans-serif;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.logo {
+  color: #dab8d9;
+  font-size: 10rem;
+  margin: 7rem 0;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+input {
+  height: 4rem;
+  width: 20rem;
+  border: none;
+  font-size: 2rem;
+  padding: 1rem;
+  border-bottom: 1px solid #dab8d9;
+}
+input:focus {
+  outline: none;
+}
+input::-webkit-input-placeholder {
+  padding: 0.5rem;
+  font-size: 2rem;
+  color: rgb(182, 178, 178);
+}
+input::-moz-placeholder {
+  padding: 0.5rem;
+  font-size: 2rem;
+  color: rgb(182, 178, 178);
+}
+input:-ms-input-placeholder {
+  padding: 0.5rem;
+  font-size: 2rem;
+  color: rgb(182, 178, 178);
+}
+input::-ms-input-placeholder {
+  padding: 0.5rem;
+  font-size: 2rem;
+  color: rgb(182, 178, 178);
+}
+input::placeholder {
+  padding: 0.5rem;
+  font-size: 2rem;
+  color: rgb(182, 178, 178);
+}
+
+.todos {
+  text-align: left;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.todo {
+  height: 4rem;
+  width: 20rem;
+  padding: 1rem;
+  background-color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.todo:not(:last-child) {
+  border-bottom: 1px solid #dab8d9;
+}
+
+.description {
+  font-size: 1rem;
+  color: rgb(79, 76, 76);
+}
+
+.done {
+  text-decoration: line-through;
+  color: rgb(182, 178, 178);
+}

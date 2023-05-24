@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Github profiles</title>
+  </head>
+  <body>
+    <form class="form" id="form">
+      <input id="input" type="text" placeholder="search for user" />
+    </form>
+    <div class="profile hidden" id="profile">
+      <div class="profile__img" id="img"></div>
+      <a href=""></a>
+      <div class="profile__info">
+        <div class="profile__name" id="name"></div>
+        <div class="profile__about" id="about"></div>
+        <div class="profile__stat">
+          <p><id id="followers"></id> Followers</p>
+          <p><span id="following"></span> Following</p>
+          <p><span id="repos"></span> Repos</p>
+        </div>
+        <div class="profile__tags" id="tags"></div>
+      </div>
+    </div>
+    <div class="error hidden" id="error">
+      There is no such profile. Try something else
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    ;
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #121011;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.board {
+  border: none;
+  display: -ms-grid;
+  display: grid;
+  gap: 4px 4px;
+}
+.board .cell {
+  -webkit-transition: background-color 2s cubic-bezier(0, 0, 0.58, 1);
+  transition: background-color 2s cubic-bezier(0, 0, 0.58, 1);
+}
+.board .cell:hover {
+  -webkit-transition: background-color 0s;
+  transition: background-color 0s;
+}
